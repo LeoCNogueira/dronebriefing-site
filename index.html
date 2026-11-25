@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Drone Briefing: posso voar agora? Clima, vento em altura e regras do DECEA</title>
-<meta name="description" content="App de iPhone, iPad e Apple Watch que responde se dá para voar de drone agora: vento na altura do voo, chuva, Kp, satélites, avisos do INMET e as regras da ICA 100-40/2026. Sem conta, sem rastreio.">
+<title>Drone Briefing: saiba se pode voar de drone antes de decolar</title>
+<meta name="description" content="Vento na altura do voo, chuva, Kp, satélites, avisos do INMET e as zonas e regras do DECEA de 2026 num só veredito, para o seu drone. App para iPhone, iPad e Apple Watch. Sem conta e sem rastreio.">
 <link rel="canonical" href="https://dronebriefing.ravendronevideos.com.br/">
 <link rel="alternate" hreflang="pt-BR" href="https://dronebriefing.ravendronevideos.com.br/">
 <link rel="alternate" hreflang="en" href="https://dronebriefing.ravendronevideos.com.br/en/">
@@ -14,15 +14,15 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Drone Briefing">
-<meta property="og:title" content="Drone Briefing: posso voar agora?">
-<meta property="og:description" content="Vento na altura do voo, chuva, Kp, satélites, avisos do INMET e as regras brasileiras de 2026 num só veredito.">
+<meta property="og:title" content="Drone Briefing: posso voar aqui e agora?">
+<meta property="og:description" content="Vento na altura do voo, zonas do DECEA, chuva, Kp e as regras de 2026 num só veredito, para o seu drone.">
 <meta property="og:url" content="https://dronebriefing.ravendronevideos.com.br/">
 <meta property="og:image" content="https://dronebriefing.ravendronevideos.com.br/assets/icon-512.png">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2026-11-25">
+<link rel="stylesheet" href="style.css?v=2026-11-25b">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -30,7 +30,7 @@
   "name": "Drone Briefing",
   "operatingSystem": "iOS 18 ou mais novo",
   "applicationCategory": "WeatherApplication",
-  "description": "Responde se dá para voar de drone agora: vento na altura do voo, chuva, índice Kp, satélites, avisos do INMET e as regras do DECEA e da ANAC.",
+  "description": "Responde se dá para voar de drone aqui e agora: vento na altura do voo, chuva, índice Kp, satélites, avisos do INMET e as zonas e regras do DECEA e da ANAC.",
   "image": "https://dronebriefing.ravendronevideos.com.br/assets/icon-512.png",
   "url": "https://dronebriefing.ravendronevideos.com.br/",
   "downloadUrl": "https://apps.apple.com/app/idAPPLEID",
@@ -40,11 +40,16 @@
 }
 </script>
 </head>
-<body>
+<body class="landing">
 
 <header class="topo">
   <div class="largura">
     <a class="marca" href="#topo" aria-label="Drone Briefing, início"><img src="assets/icon-64.png" alt="" width="36" height="36">Drone Briefing</a>
+    <nav class="menu" aria-label="Seções">
+      <a href="#recursos">Recursos</a>
+      <a href="#precos">Preços</a>
+      <a href="#perguntas">Perguntas</a>
+    </nav>
     <div class="topo-acoes">
       <a class="idioma-link" href="en/" hreflang="en" lang="en">English</a>
       <a class="botao" href="https://apps.apple.com/app/idAPPLEID">Baixar grátis</a>
@@ -54,132 +59,215 @@
 
 <main id="topo">
 
-<section class="hero">
+<section class="hero-v2">
   <div class="largura">
     <div>
-      <h1>Posso voar agora? A resposta em um olhar.</h1>
-      <p class="subtitulo">O Drone Briefing junta o vento na altura do seu voo, a chuva, o índice Kp, os satélites, os avisos do INMET e as regras brasileiras de 2026 num só veredito, para o drone que você vai levar.</p>
+      <span class="etiqueta">Novo · regras de 2026 e zonas do DECEA</span>
+      <h1>Saiba se pode voar <em>antes</em> de tirar o drone da mochila.</h1>
+      <p class="subtitulo">O Drone Briefing junta o vento na altura do seu voo, a chuva, o Kp, os satélites, os avisos do INMET e as zonas de aeroportos e helipontos do DECEA num só veredito, para o drone que você vai levar.</p>
       <div class="acoes">
-        <a class="selo" href="https://apps.apple.com/app/idAPPLEID"><img src="assets/badge-app-store-pt.svg" alt="Baixar na App Store" width="160" height="52" onerror="this.parentNode.className='selo-texto';this.parentNode.textContent='Baixar na App Store';"></a>
-        <p class="oferta"><strong>Grátis para baixar.</strong> O Pro tem 7 dias grátis.</p>
+        <a class="selo" href="https://apps.apple.com/app/idAPPLEID"><img src="assets/badge-app-store-pt.svg" alt="Baixar na App Store" width="160" height="52" onerror="this.parentNode.className='botao grande';this.parentNode.textContent='Baixar grátis na App Store';"></a>
+        <p class="oferta"><strong>Grátis para baixar.</strong><br>Pro com 7 dias grátis.</p>
       </div>
-      <p class="requisito">Para iPhone e iPad com iOS 18 ou mais novo, e Apple Watch. Em português e inglês.</p>
-    </div>
-
-    <div class="briefing" role="img" aria-label="Exemplo do veredito: bom para voar com o Mini 4 Pro a 60 metros, vento de 18 km/h, chuva 10%, Kp 2 e 21 satélites.">
-      <p class="local" aria-hidden="true"><span>Praia dos Ossos · Mini 4 Pro · 60 m</span><span>14:00</span></p>
-      <div class="veredito" aria-hidden="true">
-        <div class="marca-v">✓</div>
-        <div><strong>Bom para voar</strong><span>Melhor janela hoje: 09:00–13:00</span></div>
-      </div>
-      <ul class="fatores" aria-hidden="true">
-        <li><b>18 km/h</b>vento a 60 m</li>
-        <li class="atencao"><b>34 km/h</b>rajadas</li>
-        <li><b>10%</b>chance de chuva</li>
-        <li><b>Kp 2</b>campo magnético calmo</li>
-        <li><b>21</b>satélites visíveis</li>
-        <li><b>28 °C</b>temperatura</li>
+      <ul class="garantias-mini">
+        <li>Sem conta</li>
+        <li>Sem anúncios</li>
+        <li>Seus dados ficam no iPhone</li>
+        <li>iPhone, iPad e Apple Watch</li>
       </ul>
-      <div class="alturas" aria-hidden="true">
-        <div><span>120 m</span><i style="width:92%"></i><span>23 km/h</span></div>
-        <div><span>60 m</span><i style="width:74%"></i><span>18 km/h</span></div>
-        <div><span>10 m</span><i style="width:52%"></i><span>13 km/h</span></div>
-      </div>
-      <p class="aviso" aria-hidden="true">Ferramenta de planejamento. Não substitui a autorização no SARPAS.</p>
+    </div>
+    <div class="aparelhos" aria-hidden="true">
+      <div class="aparelho tras"><img src="assets/screens/map-pt.jpg" alt="" width="450" height="978"></div>
+      <div class="aparelho frente"><img src="assets/screens/now-pt.jpg" alt="" width="450" height="978"></div>
+      <div class="selo-flutuante a"><b>14 km/h a 60 m</b>35% do limite do drone</div>
+      <div class="selo-flutuante b"><b>Heliponto a 2,5 km</b>até 91 m aqui</div>
     </div>
   </div>
 </section>
 
-<section class="confianca" aria-label="Garantias">
-  <ul class="largura">
-    <li><strong>Regras de 2026</strong>ICA 100-40 e RBAC 100</li>
-    <li><strong>Vento na sua altura</strong>de 10 a 120 m</li>
-    <li><strong>Sem conta, sem rastreio</strong>só a coordenada sai do aparelho</li>
-    <li><strong>Segurança grátis</strong>o veredito nunca fica atrás do Pro</li>
-  </ul>
-</section>
-
-<section class="secao">
+<section class="provas" aria-label="Fontes e números">
   <div class="largura">
-    <h2>Tudo o que você confere antes de decolar.</h2>
-    <p class="introducao">Cada fator é comparado com os limites do seu drone e do tipo de voo. O veredito diz o que pesou, com a fonte e o horário dos dados.</p>
-    <ul class="grade">
-      <li><span class="icone">≋</span><h3>Vento em altura</h3><p>A previsão a 10 m projetada até a altura do voo, com rajadas, de dia e de noite, para cada hora.</p></li>
-      <li><span class="icone">☂</span><h3>Chuva e nuvens baixas</h3><p>Chance e intensidade da chuva, visibilidade e a base estimada das nuvens.</p></li>
-      <li><span class="icone">☀</span><h3>Índice Kp</h3><p>Tempestades geomagnéticas que atrapalham a bússola e o GPS, pela previsão da NOAA.</p></li>
-      <li><span class="icone">◎</span><h3>Satélites</h3><p>GPS, Galileo, GLONASS e BeiDou visíveis por hora, calculados no aparelho.</p></li>
-      <li><span class="icone laranja">!</span><h3>Avisos do INMET</h3><p>Ventania, tempestade e chuva forte do aviso oficial, só quando o local está dentro da área.</p></li>
-      <li><span class="icone">⌖</span><h3>Zonas do DECEA</h3><p>Mapa com as zonas de aeródromos e helipontos da ICA 100-40 na pista real, áreas proibidas e restritas e corredores de helicópteros. O veredito diz a altura máxima no local.</p></li>
+    <p class="fontes">Com dados de <b>Apple Weather</b> · <b>DECEA</b> · <b>INMET</b> · <b>NOAA</b> · <b>IGS</b> (satélites)</p>
+    <ul class="numeros">
+      <li><strong>6.136</strong><span>aeródromos e helipontos do DECEA</span></li>
+      <li><strong>10 a 120 m</strong><span>vento na altura do seu voo</span></li>
+      <li><strong>4</strong><span>constelações de satélites por hora</span></li>
+      <li><strong>2026</strong><span>ICA 100-40 e RBAC 100 em dia</span></li>
     </ul>
   </div>
 </section>
 
-<section class="secao alt" id="regras">
+<section class="secao">
   <div class="largura">
-    <h2>As regras brasileiras, atualizadas.</h2>
-    <p class="introducao">A ICA 100-40/2026 do DECEA e o RBAC 100 da ANAC mudaram em julho de 2026 e mudam de novo em janeiro de 2027. O app guarda as regras em dados, com a data de vigência, e mostra sempre o limite mais restritivo.</p>
-    <div class="regras">
-      <div class="cartao"><span class="numero">60 m</span><h3>Voo recreativo</h3><p>Altura máxima do voo recreativo, com o afastamento de pessoas e de aeródromos que vale para o seu caso.</p></div>
-      <div class="cartao"><span class="numero">120 m</span><h3>Voo de trabalho</h3><p>Os limites do voo profissional, com o lembrete do SARPAS e o protocolo da autorização conferido na consulta pública do DECEA.</p></div>
-      <div class="cartao"><h3>Central do piloto <span class="selo-pro">PRO</span></h3><p>Exame da ANAC, SISANT, seguro obrigatório e avaliação de risco, com o que vale para o seu tipo de voo e lembretes antes de vencer.</p></div>
-      <div class="cartao"><h3>Carteira do piloto <span class="selo-pro">PRO</span></h3><p>Foto, documentos, aeronaves, seguro, QR da consulta do SARPAS e modo fiscalização para mostrar numa abordagem, mesmo sem internet.</p></div>
+    <h2 class="centro" style="max-width:20em">O app do tempo não foi feito para quem voa drone.</h2>
+    <p class="introducao centro">Ele mostra o vento no chão e não sabe nada de espaço aéreo. Quem descobre o resto no ar é você.</p>
+    <div class="dores">
+      <div class="dor"><span class="icone">≋</span><h3>Lá em cima venta mais</h3><p>Os 10 km/h da previsão viram rajadas bem mais fortes a 60 ou 120 m. É ali que o drone luta contra o vento e a bateria vai embora.</p></div>
+      <div class="dor"><span class="icone">⌖</span><h3>A zona que ninguém vê</h3><p>Aeroportos e helipontos têm zonas de restrição de vários quilômetros. Na praia, no condomínio ou no hotel ao lado pode haver um heliponto.</p></div>
+      <div class="dor"><span class="icone">!</span><h3>Regras novas em 2026</h3><p>A ICA 100-40 mudou em julho: 60 m no recreativo, autorização para qualquer peso. E muda de novo em janeiro de 2027.</p></div>
     </div>
   </div>
 </section>
 
-<section class="secao" id="pro">
+<section class="secao alt" id="recursos">
   <div class="largura">
-    <h2>Grátis para voar com segurança. Pro para quem voa sempre.</h2>
-    <p class="introducao">O veredito, o vento em altura, a chuva, o Kp, as regras e os avisos do INMET são grátis para sempre.</p>
-    <div class="planos">
-      <div class="plano">
-        <h3>Grátis</h3>
-        <p class="preco">R$ 0</p>
-        <p class="nota">Tudo o que pesa na segurança.</p>
-        <ul>
-          <li>Veredito de agora, para o seu drone e o tipo de voo</li>
-          <li>Vento em altura, chuva, Kp e avisos do INMET</li>
-          <li>Regras do DECEA e da ANAC e mapa de zonas</li>
-          <li>Previsão de 3 dias e 1 local salvo</li>
-          <li>Widget pequeno e a Siri: "Posso voar agora com o Drone Briefing?"</li>
+    <h2 class="centro">Tudo o que você confere antes de decolar. Em um olhar.</h2>
+
+    <article class="recurso">
+      <div class="midia"><div class="aparelho"><img src="assets/screens/now-pt.jpg" alt="Tela Agora: Bom para voar, pode voar até 18:00, com o vento em cada altura" width="450" height="978" loading="lazy"></div></div>
+      <div>
+        <p class="sobre">O veredito</p>
+        <h3>Bom para voar, voe com cuidado ou fique no chão.</h3>
+        <p>O app compara cada fator com os limites do seu drone e do tipo de voo, e diz até quando a resposta vale e qual é a melhor janela do dia.</p>
+        <ul class="lista-ok">
+          <li>O motivo em uma linha, com a fonte e o horário dos dados</li>
+          <li>Perfis de Mini, Air, Mavic, Avata, Neo e Flip, ou o seu</li>
+          <li>Horários no fuso do local, não do aparelho</li>
         </ul>
       </div>
-      <div class="plano destaque">
-        <h3>Pro anual <span class="selo-pro">7 DIAS GRÁTIS</span></h3>
-        <p class="preco">R$ 59,90<small style="font-size:.5em;font-weight:600"> por ano</small></p>
-        <p class="nota">Cancele quando quiser, pela App Store.</p>
-        <ul>
-          <li>Previsão de 7 dias e locais ilimitados</li>
-          <li>Satélites por hora</li>
-          <li>Widgets médios e da tela bloqueada, Live Activity</li>
-          <li>App do Apple Watch e complicações</li>
-          <li>Central do piloto, SARPAS e carteira</li>
-          <li>Horas de voo pelos registros do DJI Fly</li>
+    </article>
+
+    <article class="recurso invertido">
+      <div class="midia"><div class="aparelho"><img src="assets/screens/wind-pt.jpg" alt="Vento por altura: 10, 30, 60 e 120 m, com o teto recreativo de 60 m" width="450" height="978" loading="lazy"></div></div>
+      <div>
+        <p class="sobre">Vento em altura</p>
+        <h3>O vento onde o drone está, não onde você está.</h3>
+        <p>A previsão a 10 m projetada para 30, 60 e 120 m, com rajadas, de dia e de noite, comparada ao limite do seu drone hora a hora.</p>
+        <ul class="lista-ok">
+          <li>O teto do voo recreativo marcado na régua</li>
+          <li>Chuva, visibilidade, base das nuvens e temperatura</li>
+          <li>Kp da NOAA e satélites GPS, Galileo, GLONASS e BeiDou</li>
         </ul>
       </div>
-      <div class="plano">
-        <h3>Pro vitalício</h3>
-        <p class="preco">R$ 149,90</p>
-        <p class="nota">Pagamento único, sem assinatura.</p>
-        <ul>
-          <li>Tudo do Pro, para sempre</li>
-          <li>No iPhone, no iPad e no Watch com o mesmo ID Apple</li>
+    </article>
+
+    <article class="recurso">
+      <div class="midia"><div class="aparelho"><img src="assets/screens/map-pt.jpg" alt="Mapa com as zonas de helipontos e aeroportos do DECEA em volta da Praia dos Ossos" width="450" height="978" loading="lazy"></div></div>
+      <div>
+        <p class="sobre">Espaço aéreo do DECEA</p>
+        <h3>Veja as zonas de aeroportos e helipontos antes de subir.</h3>
+        <p>As zonas da ICA 100-40/2026 desenhadas na pista real de cada aeroporto, mais as áreas proibidas, restritas e perigosas e os corredores de helicópteros. O veredito diz a altura máxima no local.</p>
+        <ul class="lista-ok">
+          <li>Toque no mapa para conferir qualquer ponto</li>
+          <li>Calculado no iPhone, sem enviar sua localização</li>
+          <li>Fonte e emenda AIRAC sempre à vista</li>
         </ul>
       </div>
-    </div>
-    <p class="requisito" style="margin-top:14px">Preços no Brasil. Em outros países, a App Store mostra o preço na moeda local.</p>
+    </article>
+
+    <article class="recurso invertido">
+      <div class="midia"><div class="aparelho"><img src="assets/screens/week-pt.jpg" alt="A semana com a melhor janela de cada dia" width="450" height="978" loading="lazy"></div></div>
+      <div>
+        <p class="sobre">Planejamento</p>
+        <h3>Escolha o dia certo para o voo que importa.</h3>
+        <p>A melhor janela de cada dia da semana, com gráficos de vento e chuva hora a hora, nos locais onde você voa.</p>
+        <ul class="lista-ok">
+          <li>Locais salvos, cada um com o seu drone e a sua altura</li>
+          <li>Widgets, Live Activity e Apple Watch</li>
+          <li>"E aí, Siri: posso voar agora com o Drone Briefing?"</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="recurso">
+      <div class="midia"><div class="aparelho"><img src="assets/screens/pilot-pt.jpg" alt="Carteira do piloto com foto, documentos e piloto em dia" width="450" height="978" loading="lazy"></div></div>
+      <div>
+        <p class="sobre">Carteira do piloto <span class="selo-pro">PRO</span></p>
+        <h3>Tudo em dia, e tudo à mão na fiscalização.</h3>
+        <p>Exame da ANAC, SISANT, seguro e avaliação de risco com lembretes antes de vencer, e uma carteira com foto, aeronaves e o QR da consulta do SARPAS.</p>
+        <ul class="lista-ok">
+          <li>Modo fiscalização, que funciona sem internet</li>
+          <li>Protocolo do SARPAS conferido: horário, altura e área</li>
+          <li>Horas de voo pelos registros do DJI Fly, sem login na DJI</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="secao">
+  <div class="largura">
+    <h2 class="centro">Do sofá à decolagem em três passos.</h2>
+    <ol class="passos" style="margin-top:28px">
+      <li><h3>Escolha o drone e a altura</h3><p>Mini, Air, Mavic, Avata ou o seu. Recreativo até 60 m ou trabalho até 120 m.</p></li>
+      <li><h3>Leia o veredito</h3><p>O que pesou, até quando vale e a melhor janela. Zonas e regras do local incluídas.</p></li>
+      <li><h3>Peça no SARPAS e voe</h3><p>O app leva você ao SARPAS e confere o protocolo depois. A decisão final é sempre do piloto.</p></li>
+    </ol>
   </div>
 </section>
 
 <section class="secao alt">
   <div class="largura">
+    <div class="autor">
+      <img src="assets/icon-256.png" alt="" width="84" height="84">
+      <div>
+        <blockquote>"Eu queria um app que respondesse uma pergunta só: dá para voar aqui, agora, com este drone?"</blockquote>
+        <p>Feito por Leonardo Nogueira, piloto de drone da Raven Drone Videos, para as regras e os dados do Brasil. Sem conta, sem anúncios, sem rastreio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao" id="precos">
+  <div class="largura">
+    <h2 class="centro">A segurança é grátis. O Pro é para quem voa sempre.</h2>
+    <p class="introducao centro">O veredito, o vento em altura, a chuva, o Kp, o mapa de zonas, as regras e os avisos do INMET nunca ficam atrás do Pro.</p>
+    <div class="planos">
+      <div class="plano">
+        <h3>Grátis</h3>
+        <p class="preco">R$ 0</p>
+        <p class="nota">Para conferir antes de cada voo.</p>
+        <ul>
+          <li>Veredito com vento em altura, chuva e Kp</li>
+          <li>Mapa de zonas do DECEA e regras de 2026</li>
+          <li>Avisos do INMET</li>
+          <li>Previsão de 3 dias e 1 local salvo</li>
+          <li>Widget pequeno e a Siri</li>
+        </ul>
+        <a class="botao secundario" href="https://apps.apple.com/app/idAPPLEID">Baixar grátis</a>
+      </div>
+      <div class="plano destaque">
+        <span class="fita">RECOMENDADO · 7 DIAS GRÁTIS</span>
+        <h3>Pro anual</h3>
+        <p class="preco">R$ 59,90<small style="font-size:.5em;font-weight:600"> por ano</small></p>
+        <p class="por-mes">Menos de R$ 5 por mês</p>
+        <ul>
+          <li>Tudo do grátis, mais:</li>
+          <li>Previsão de 7 dias e locais ilimitados</li>
+          <li>Satélites por hora</li>
+          <li>Widgets médios e da tela bloqueada, Live Activity</li>
+          <li>App do Apple Watch e complicações</li>
+          <li>Central e carteira do piloto, SARPAS</li>
+          <li>Horas de voo do DJI Fly</li>
+        </ul>
+        <a class="botao" href="https://apps.apple.com/app/idAPPLEID">Começar 7 dias grátis</a>
+      </div>
+      <div class="plano">
+        <h3>Pro vitalício</h3>
+        <p class="preco">R$ 149,90</p>
+        <p class="nota">Pague uma vez, use para sempre.</p>
+        <ul>
+          <li>Todo o Pro, sem assinatura</li>
+          <li>No iPhone, no iPad e no Watch com o mesmo ID Apple</li>
+        </ul>
+        <a class="botao secundario" href="https://apps.apple.com/app/idAPPLEID">Comprar na App Store</a>
+      </div>
+    </div>
+    <p class="seguro">Cancele o teste antes do 7º dia e não paga nada. Compras processadas pela Apple; preços no Brasil.</p>
+  </div>
+</section>
+
+<section class="secao alt" id="perguntas">
+  <div class="largura">
     <h2>Perguntas frequentes</h2>
     <div class="perguntas">
-      <details><summary>O veredito substitui a autorização do DECEA?</summary><p>Não. O Drone Briefing é uma ferramenta de planejamento. Voos que precisam de autorização continuam sendo pedidos no SARPAS; o app tem o link para o SARPAS e confere o protocolo na consulta pública.</p></details>
-      <details><summary>Por que 60 m no voo recreativo?</summary><p>A ICA 100-40/2026 limita o voo recreativo a 60 m de altura. O voo de trabalho vai até 120 m, com as condições da norma. O app mostra sempre o limite mais restritivo que vale para o seu caso.</p></details>
+      <details><summary>O veredito substitui a autorização do DECEA?</summary><p>Não. O Drone Briefing é uma ferramenta de planejamento. Voos que precisam de autorização continuam sendo pedidos no SARPAS; o app tem o link e confere o protocolo na consulta pública.</p></details>
+      <details><summary>De onde vêm as zonas do mapa?</summary><p>Do GeoAISWEB, o serviço público de dados aeronáuticos do DECEA: aeródromos, pistas, helipontos, áreas proibidas, restritas e perigosas e corredores de helicópteros. As zonas de aeroportos e helipontos seguem as distâncias da ICA 100-40/2026. Aeródromos sem a pista nos dados aparecem como "zona estimada". O app mostra a emenda dos dados.</p></details>
+      <details><summary>Por que 60 m no voo recreativo?</summary><p>A ICA 100-40/2026 limita o voo recreativo a 60 m de altura e 300 m de distância. O voo de trabalho vai até 120 m, com as condições da norma. O app mostra sempre o limite mais restritivo para o seu caso.</p></details>
       <details><summary>Como o app sabe o vento a 60 ou 120 m?</summary><p>A previsão do Apple Weather é dada a 10 m. O app projeta o vento até a altura do voo com um perfil que muda de dia e de noite, e avisa que o valor acima de 10 m é estimado.</p></details>
-      <details><summary>Preciso criar conta?</summary><p>Não. Não há conta, anúncios nem rastreio. Só a coordenada do local, arredondada para cerca de 1 km, vai ao Apple Weather para buscar a previsão.</p></details>
-      <details><summary>Funciona fora do Brasil?</summary><p>O clima, o vento, o Kp e os satélites funcionam em qualquer lugar. As regras seguem o país do local do voo; os avisos do INMET, o SARPAS e a central do piloto são do Brasil.</p></details>
+      <details><summary>Preciso criar conta? E a minha localização?</summary><p>Não há conta, anúncios nem rastreio. Só a coordenada do local, arredondada para cerca de 1 km, vai ao Apple Weather para buscar a previsão. As zonas são calculadas no próprio iPhone, e seus documentos ficam nele.</p></details>
+      <details><summary>Funciona sem internet?</summary><p>O mapa de zonas, as regras e a carteira do piloto funcionam offline. A previsão precisa de internet para atualizar; os widgets mostram a última baixada.</p></details>
+      <details><summary>Funciona fora do Brasil?</summary><p>O clima, o vento, o Kp e os satélites funcionam em qualquer lugar, e as regras seguem o país do local. O mapa de zonas, os avisos do INMET, o SARPAS e a central do piloto são do Brasil.</p></details>
       <details><summary>Como cancelo a assinatura?</summary><p>No iPhone, em Ajustes ▸ seu nome ▸ Assinaturas ▸ Drone Briefing. Cancelando até 24 horas antes do fim do período, ela não se renova.</p></details>
     </div>
   </div>
@@ -187,19 +275,24 @@
 
 <section class="chamada">
   <div class="largura">
-    <h2>Confira antes de decolar.</h2>
+    <h2>Seu próximo voo começa com um briefing.</h2>
     <p>Grátis para baixar, com o Pro grátis por 7 dias.</p>
-    <a class="botao" href="https://apps.apple.com/app/idAPPLEID">Baixar na App Store</a>
+    <a class="botao grande" href="https://apps.apple.com/app/idAPPLEID">Baixar na App Store</a>
   </div>
 </section>
 
 </main>
 
+<div class="barra-fixa">
+  <span>Drone Briefing · grátis</span>
+  <a class="botao" href="https://apps.apple.com/app/idAPPLEID">Baixar</a>
+</div>
+
 <footer class="rodape">
   <div class="largura">
     <div>
       <p>© 2026 Leonardo Nogueira. Drone Briefing para iPhone, iPad e Apple Watch.</p>
-      <p class="legal">Ferramenta de planejamento: não substitui a autorização no SARPAS nem a avaliação do piloto. Dados do clima: Apple Weather. Kp: NOAA SWPC. Avisos: INMET. Apple, iPhone, iPad e Apple Watch são marcas da Apple Inc.</p>
+      <p class="legal">Ferramenta de planejamento: não substitui a autorização no SARPAS nem a avaliação do piloto. Dados do clima: Apple Weather. Espaço aéreo: DECEA (GeoAISWEB). Kp: NOAA SWPC. Avisos: INMET. Telas com dados de exemplo. Apple, iPhone, iPad e Apple Watch são marcas da Apple Inc.</p>
     </div>
     <nav aria-label="Rodapé">
       <a href="support.html">Suporte</a>

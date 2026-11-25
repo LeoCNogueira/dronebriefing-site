@@ -18,7 +18,7 @@ usá-la, ela precisa entrar também no texto "Este site" das duas páginas de pr
 | `sitemap.xml`, `robots.txt` | Para o Google |
 | `CNAME` | O subdomínio do GitHub Pages |
 | `.nojekyll` | Arquivo oculto: faz o GitHub Pages publicar os arquivos como estão |
-| `assets/` | Ícones do app (64, 180, 256 e 512 px) |
+| `assets/` | Ícones do app (64, 180, 256 e 512 px) e `screens/`, as telas do app em JPEG (pt e en) |
 
 ## 1. Crie o repositório público
 
@@ -66,6 +66,9 @@ Espere o DNS propagar (minutos a algumas horas) e marque **Enforce HTTPS** em Se
 - Um endereço qualquer inexistente deve mostrar a página "Fora da rota".
 
 ## Manutenção
+
+- As telas em `assets/screens/` saem do simulador no modo de demonstração (piloto e semana fictícios), em JPEG de
+  900 px. Para refazer: capturas com `-demo YES -pro lifetime` e `sips -s format jpeg -s formatOptions 78 -Z 900`.
 
 - Preços (R$ 59,90 por ano e R$ 149,90 vitalício) estão no `index.html`, no quadro de planos e no JSON-LD. Se
   mudarem no App Store Connect, mude aqui também. A página em inglês não mostra preço.

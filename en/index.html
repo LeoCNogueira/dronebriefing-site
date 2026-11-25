@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Drone Briefing: can I fly now? Drone weather, wind at height and rules</title>
-<meta name="description" content="iPhone, iPad and Apple Watch app that tells you if you can fly your drone now: wind at flight height, rain, Kp, satellites and the local rules. No account, no tracking.">
+<title>Drone Briefing: know if you can fly your drone before take-off</title>
+<meta name="description" content="Wind at flight height, rain, Kp, satellites and the local rules in one verdict for your drone, plus Brazil's DECEA airspace zones. iPhone, iPad and Apple Watch. No account, no tracking.">
 <link rel="canonical" href="https://dronebriefing.ravendronevideos.com.br/en/">
 <link rel="alternate" hreflang="pt-BR" href="https://dronebriefing.ravendronevideos.com.br/">
 <link rel="alternate" hreflang="en" href="https://dronebriefing.ravendronevideos.com.br/en/">
@@ -14,15 +14,15 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Drone Briefing">
-<meta property="og:title" content="Drone Briefing: can I fly now?">
-<meta property="og:description" content="Wind at flight height, rain, Kp, satellites and the local rules in one verdict.">
+<meta property="og:title" content="Drone Briefing: can I fly here, now?">
+<meta property="og:description" content="Wind at flight height, rain, Kp, satellites and the local rules in one verdict for your drone.">
 <meta property="og:url" content="https://dronebriefing.ravendronevideos.com.br/en/">
 <meta property="og:image" content="https://dronebriefing.ravendronevideos.com.br/assets/icon-512.png">
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=2026-11-25">
+<link rel="stylesheet" href="../style.css?v=2026-11-25b">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -30,7 +30,7 @@
   "name": "Drone Briefing",
   "operatingSystem": "iOS 18 or later",
   "applicationCategory": "WeatherApplication",
-  "description": "Tells you if you can fly your drone now: wind at flight height, rain, Kp index, satellites and the local rules.",
+  "description": "Tells you if you can fly your drone here and now: wind at flight height, rain, Kp index, satellites, the local rules and Brazil's DECEA airspace zones.",
   "image": "https://dronebriefing.ravendronevideos.com.br/assets/icon-512.png",
   "url": "https://dronebriefing.ravendronevideos.com.br/en/",
   "downloadUrl": "https://apps.apple.com/app/idAPPLEID",
@@ -40,11 +40,16 @@
 }
 </script>
 </head>
-<body>
+<body class="landing">
 
 <header class="topo">
   <div class="largura">
-    <a class="marca" href="#top" aria-label="Drone Briefing, home"><img src="../assets/icon-64.png" alt="" width="36" height="36">Drone Briefing</a>
+    <a class="marca" href="#topo" aria-label="Drone Briefing, home"><img src="../assets/icon-64.png" alt="" width="36" height="36">Drone Briefing</a>
+    <nav class="menu" aria-label="Sections">
+      <a href="#recursos">Features</a>
+      <a href="#precos">Pricing</a>
+      <a href="#perguntas">Questions</a>
+    </nav>
     <div class="topo-acoes">
       <a class="idioma-link" href="../" hreflang="pt-BR" lang="pt-BR">Português</a>
       <a class="botao" href="https://apps.apple.com/app/idAPPLEID">Get it free</a>
@@ -52,117 +57,215 @@
   </div>
 </header>
 
-<main id="top">
+<main id="topo">
 
-<section class="hero">
+<section class="hero-v2">
   <div class="largura">
     <div>
-      <h1>Can I fly now? The answer at a glance.</h1>
-      <p class="subtitulo">Drone Briefing brings together the wind at your flight height, rain, the Kp index, satellites and the local rules in one verdict, for the drone you are taking.</p>
+      <span class="etiqueta">New · Brazil's 2026 rules and airspace zones</span>
+      <h1>Know if you can fly <em>before</em> the drone leaves the bag.</h1>
+      <p class="subtitulo">Drone Briefing brings the wind at your flight height, rain, the Kp index, satellites and the local rules together in one verdict, for the drone you are taking. In Brazil, with DECEA's airport and heliport zones too.</p>
       <div class="acoes">
-        <a class="selo" href="https://apps.apple.com/app/idAPPLEID"><img src="../assets/badge-app-store-en.svg" alt="Download on the App Store" width="160" height="52" onerror="this.parentNode.className='selo-texto';this.parentNode.textContent='Download on the App Store';"></a>
-        <p class="oferta"><strong>Free to download.</strong> Pro comes with 7 days free.</p>
+        <a class="selo" href="https://apps.apple.com/app/idAPPLEID"><img src="../assets/badge-app-store-en.svg" alt="Download on the App Store" width="160" height="52" onerror="this.parentNode.className='botao grande';this.parentNode.textContent='Download free on the App Store';"></a>
+        <p class="oferta"><strong>Free to download.</strong><br>Pro with a 7-day free trial.</p>
       </div>
-      <p class="requisito">For iPhone and iPad with iOS 18 or later, and Apple Watch. In English and Portuguese.</p>
-    </div>
-
-    <div class="briefing" role="img" aria-label="Example verdict: good to fly with the Mini 4 Pro at 120 metres, wind 23 km/h, rain 10%, Kp 2 and 21 satellites.">
-      <p class="local" aria-hidden="true"><span>Lakeside · Mini 4 Pro · 120 m</span><span>14:00</span></p>
-      <div class="veredito" aria-hidden="true">
-        <div class="marca-v">✓</div>
-        <div><strong>Good to fly</strong><span>Best window today: 09:00–13:00</span></div>
-      </div>
-      <ul class="fatores" aria-hidden="true">
-        <li><b>23 km/h</b>wind at 120 m</li>
-        <li class="atencao"><b>38 km/h</b>gusts</li>
-        <li><b>10%</b>chance of rain</li>
-        <li><b>Kp 2</b>quiet magnetic field</li>
-        <li><b>21</b>satellites in view</li>
-        <li><b>24 °C</b>temperature</li>
+      <ul class="garantias-mini">
+        <li>No account</li>
+        <li>No ads</li>
+        <li>Your data stays on your iPhone</li>
+        <li>iPhone, iPad and Apple Watch</li>
       </ul>
-      <div class="alturas" aria-hidden="true">
-        <div><span>120 m</span><i style="width:92%"></i><span>23 km/h</span></div>
-        <div><span>60 m</span><i style="width:74%"></i><span>18 km/h</span></div>
-        <div><span>10 m</span><i style="width:52%"></i><span>13 km/h</span></div>
-      </div>
-      <p class="aviso" aria-hidden="true">A planning tool. It does not replace LAANC or SARPAS authorization.</p>
+    </div>
+    <div class="aparelhos" aria-hidden="true">
+      <div class="aparelho tras"><img src="../assets/screens/map-en.jpg" alt="" width="450" height="978"></div>
+      <div class="aparelho frente"><img src="../assets/screens/now-en.jpg" alt="" width="450" height="978"></div>
+      <div class="selo-flutuante a"><b>Gusts 9 mph at 195 ft</b>35% of the drone limit</div>
+      <div class="selo-flutuante b"><b>Heliport 1.6 mi away</b>up to 300 ft here</div>
     </div>
   </div>
 </section>
 
-<section class="confianca" aria-label="Promises">
-  <ul class="largura">
-    <li><strong>Wind at your height</strong>from 10 to 120 m</li>
-    <li><strong>Rules by location</strong>not by your phone's language</li>
-    <li><strong>No account, no tracking</strong>only the coordinate leaves the device</li>
-    <li><strong>Safety is free</strong>the verdict is never behind Pro</li>
-  </ul>
-</section>
-
-<section class="secao">
+<section class="provas" aria-label="Sources and numbers">
   <div class="largura">
-    <h2>Everything you check before take-off.</h2>
-    <p class="introducao">Each factor is compared with the limits of your drone and type of flight. The verdict tells you what weighed in, with the data source and time.</p>
-    <ul class="grade">
-      <li><span class="icone">≋</span><h3>Wind at height</h3><p>The 10 m forecast projected to your flight height, with gusts, by day and by night, for every hour.</p></li>
-      <li><span class="icone">☂</span><h3>Rain and low clouds</h3><p>Chance and intensity of rain, visibility and the estimated cloud base.</p></li>
-      <li><span class="icone">☀</span><h3>Kp index</h3><p>Geomagnetic storms that upset the compass and GPS, from the NOAA forecast.</p></li>
-      <li><span class="icone">◎</span><h3>Satellites</h3><p>GPS, Galileo, GLONASS and BeiDou in view by hour, computed on the device.</p></li>
-      <li><span class="icone laranja">!</span><h3>Local rules</h3><p>Height limits and distances for the country you fly in. In Brazil, the 2026 DECEA and ANAC rules and INMET weather warnings.</p></li>
-      <li><span class="icone">⌖</span><h3>Brazil's airspace</h3><p>DECEA's aerodrome and heliport zones on the real runways, prohibited and restricted areas and helicopter corridors. The verdict says how high you may fly.</p></li>
+    <p class="fontes">Data from <b>Apple Weather</b> · <b>DECEA</b> · <b>INMET</b> · <b>NOAA</b> · <b>IGS</b> (satellites)</p>
+    <ul class="numeros">
+      <li><strong>6,136</strong><span>Brazilian aerodromes and heliports</span></li>
+      <li><strong>33 to 400 ft</strong><span>wind at your flight height</span></li>
+      <li><strong>4</strong><span>satellite constellations by hour</span></li>
+      <li><strong>2026</strong><span>rules up to date</span></li>
     </ul>
   </div>
 </section>
 
-<section class="secao alt" id="pro">
+<section class="secao">
   <div class="largura">
-    <h2>Free to fly safely. Pro for those who fly often.</h2>
-    <p class="introducao">The verdict, wind at height, rain, Kp, the rules and weather warnings are free forever.</p>
-    <div class="planos">
-      <div class="plano">
-        <h3>Free</h3>
-        <p class="nota">Everything that matters for safety.</p>
-        <ul>
-          <li>The verdict now, for your drone and type of flight</li>
-          <li>Wind at height, rain, Kp and warnings</li>
-          <li>Local rules</li>
-          <li>3-day forecast and 1 saved place</li>
-          <li>Small widget and Siri: "Can I fly now with Drone Briefing?"</li>
-        </ul>
-      </div>
-      <div class="plano destaque">
-        <h3>Pro yearly <span class="selo-pro">7 DAYS FREE</span></h3>
-        <p class="nota">Cancel anytime in the App Store.</p>
-        <ul>
-          <li>7-day forecast and unlimited places</li>
-          <li>Satellites by hour</li>
-          <li>Medium and lock screen widgets, Live Activity</li>
-          <li>Apple Watch app and complications</li>
-          <li>Pilot central, wallet and inspection mode</li>
-          <li>Flight hours from DJI Fly records</li>
-        </ul>
-      </div>
-      <div class="plano">
-        <h3>Pro lifetime</h3>
-        <p class="nota">One payment, no subscription.</p>
-        <ul>
-          <li>All of Pro, forever</li>
-          <li>On iPhone, iPad and Watch with the same Apple Account</li>
-        </ul>
-      </div>
+    <h2 class="centro" style="max-width:20em">Your weather app wasn't made for drone pilots.</h2>
+    <p class="introducao centro">It shows the wind on the ground and knows nothing about airspace. You find out the rest in the air.</p>
+    <div class="dores">
+      <div class="dor"><span class="icone">≋</span><h3>It's windier up there</h3><p>A gentle forecast at ground level turns into much stronger gusts at 200 or 400 ft. That's where the drone fights the wind and the battery drains.</p></div>
+      <div class="dor"><span class="icone">⌖</span><h3>The zone nobody sees</h3><p>Airports and heliports have restricted zones several kilometres wide. The hotel next to the beach may have a helipad.</p></div>
+      <div class="dor"><span class="icone">!</span><h3>Rules keep changing</h3><p>Brazil's rules changed in July 2026 and change again in January 2027. The app keeps them as data, by location, never by your phone's language.</p></div>
     </div>
-    <p class="requisito" style="margin-top:14px">The App Store shows the price in your local currency.</p>
+  </div>
+</section>
+
+<section class="secao alt" id="recursos">
+  <div class="largura">
+    <h2 class="centro">Everything you check before take-off. At a glance.</h2>
+
+    <article class="recurso">
+      <div class="midia"><div class="aparelho"><img src="../assets/screens/now-en.jpg" alt="Now screen: Good to fly until 6 PM, with the wind at each height" width="450" height="978" loading="lazy"></div></div>
+      <div>
+        <p class="sobre">The verdict</p>
+        <h3>Good to fly, fly with care, or stay grounded.</h3>
+        <p>The app compares every factor with the limits of your drone and type of flight, and tells you how long the answer holds and the best window of the day.</p>
+        <ul class="lista-ok">
+          <li>The reason in one line, with the data source and time</li>
+          <li>Profiles for Mini, Air, Mavic, Avata, Neo and Flip, or your own</li>
+          <li>Times in the place's time zone, not your phone's</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="recurso invertido">
+      <div class="midia"><div class="aparelho"><img src="../assets/screens/wind-en.jpg" alt="Wind by height from 33 to 400 ft" width="450" height="978" loading="lazy"></div></div>
+      <div>
+        <p class="sobre">Wind at height</p>
+        <h3>The wind where the drone is, not where you are.</h3>
+        <p>The 33 ft forecast projected to 100, 200 and 400 ft, with gusts, by day and night, compared with your drone's limit hour by hour.</p>
+        <ul class="lista-ok">
+          <li>The recreational ceiling marked on the scale</li>
+          <li>Rain, visibility, cloud base and temperature</li>
+          <li>NOAA Kp and GPS, Galileo, GLONASS and BeiDou satellites</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="recurso">
+      <div class="midia"><div class="aparelho"><img src="../assets/screens/map-en.jpg" alt="Map with DECEA heliport and airport zones around a beach in Búzios, Brazil" width="450" height="978" loading="lazy"></div></div>
+      <div>
+        <p class="sobre">Brazil's airspace</p>
+        <h3>See airport and heliport zones before you climb.</h3>
+        <p>In Brazil, DECEA's zones drawn on each airport's real runway, plus prohibited, restricted and danger areas and helicopter corridors. The verdict says how high you may fly at the place.</p>
+        <ul class="lista-ok">
+          <li>Tap the map to check any point</li>
+          <li>Worked out on your iPhone, without sending your location</li>
+          <li>Source and AIRAC amendment always shown</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="recurso invertido">
+      <div class="midia"><div class="aparelho"><img src="../assets/screens/week-en.jpg" alt="The week with the best window of each day" width="450" height="978" loading="lazy"></div></div>
+      <div>
+        <p class="sobre">Planning</p>
+        <h3>Pick the right day for the flight that matters.</h3>
+        <p>The best window of each day of the week, with hourly wind and rain charts, at the places where you fly.</p>
+        <ul class="lista-ok">
+          <li>Saved places, each with its own drone and height</li>
+          <li>Widgets, Live Activity and Apple Watch</li>
+          <li>"Hey Siri, can I fly now with Drone Briefing?"</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="recurso">
+      <div class="midia"><div class="aparelho"><img src="../assets/screens/pilot-en.jpg" alt="Pilot wallet with photo and documents" width="450" height="978" loading="lazy"></div></div>
+      <div>
+        <p class="sobre">Pilot wallet <span class="selo-pro">PRO</span></p>
+        <h3>Everything up to date, and at hand when asked.</h3>
+        <p>A wallet with your photo, aircraft and insurance, and an inspection mode to show an officer. In Brazil, ANAC exam, SISANT and SARPAS, with reminders before they expire.</p>
+        <ul class="lista-ok">
+          <li>Inspection mode works offline</li>
+          <li>PDF dossier of your documents</li>
+          <li>Flight hours from DJI Fly records, without signing in to DJI</li>
+        </ul>
+      </div>
+    </article>
   </div>
 </section>
 
 <section class="secao">
   <div class="largura">
+    <h2 class="centro">From couch to take-off in three steps.</h2>
+    <ol class="passos" style="margin-top:28px">
+      <li><h3>Pick the drone and height</h3><p>Mini, Air, Mavic, Avata or your own. Recreational or work flight.</p></li>
+      <li><h3>Read the verdict</h3><p>What weighed in, how long it holds and the best window. Local rules included.</p></li>
+      <li><h3>Get authorized and fly</h3><p>Where your flight needs it, ask the aviation authority (LAANC, SARPAS). The final call is always the pilot's.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="secao alt">
+  <div class="largura">
+    <div class="autor">
+      <img src="../assets/icon-256.png" alt="" width="84" height="84">
+      <div>
+        <blockquote>"I wanted an app that answers one question: can I fly here, now, with this drone?"</blockquote>
+        <p>Made by Leonardo Nogueira, drone pilot at Raven Drone Videos, in Brazil. No account, no ads, no tracking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao" id="precos">
+  <div class="largura">
+    <h2 class="centro">Safety is free. Pro is for pilots who fly often.</h2>
+    <p class="introducao centro">The verdict, wind at height, rain, Kp, the zone map, the rules and weather warnings are never behind Pro.</p>
+    <div class="planos">
+      <div class="plano">
+        <h3>Free</h3>
+        <p class="preco">$0</p>
+        <p class="nota">To check before every flight.</p>
+        <ul>
+          <li>Verdict with wind at height, rain and Kp</li>
+          <li>Local rules and Brazil's zone map</li>
+          <li>Brazilian weather warnings</li>
+          <li>3-day forecast and 1 saved place</li>
+          <li>Small widget and Siri</li>
+        </ul>
+        <a class="botao secundario" href="https://apps.apple.com/app/idAPPLEID">Get it free</a>
+      </div>
+      <div class="plano destaque">
+        <span class="fita">RECOMMENDED · 7 DAYS FREE</span>
+        <h3>Pro yearly</h3>
+        <p class="preco">$19.99<small style="font-size:.5em;font-weight:600"> a year</small></p>
+        <p class="por-mes">Less than $1.70 a month</p>
+        <ul>
+          <li>Everything in Free, plus:</li>
+          <li>7-day forecast and unlimited places</li>
+          <li>Satellites by hour</li>
+          <li>Medium and lock screen widgets, Live Activity</li>
+          <li>Apple Watch app and complications</li>
+          <li>Pilot central and wallet</li>
+          <li>DJI Fly flight hours</li>
+        </ul>
+        <a class="botao" href="https://apps.apple.com/app/idAPPLEID">Start 7 days free</a>
+      </div>
+      <div class="plano">
+        <h3>Pro lifetime</h3>
+        <p class="preco">$49.99</p>
+        <p class="nota">Pay once, use forever.</p>
+        <ul>
+          <li>All of Pro, no subscription</li>
+          <li>On iPhone, iPad and Watch with the same Apple Account</li>
+        </ul>
+        <a class="botao secundario" href="https://apps.apple.com/app/idAPPLEID">Buy on the App Store</a>
+      </div>
+    </div>
+    <p class="seguro">Cancel the trial before day 7 and pay nothing. Purchases are processed by Apple; US prices shown, the App Store shows your local price.</p>
+  </div>
+</section>
+
+<section class="secao alt" id="perguntas">
+  <div class="largura">
     <h2>Questions</h2>
     <div class="perguntas">
       <details><summary>Does the verdict replace LAANC or SARPAS?</summary><p>No. Drone Briefing is a planning tool. Flights that need authorization still need it from the aviation authority; the app links to it.</p></details>
-      <details><summary>How does the app know the wind at 120 m?</summary><p>The Apple Weather forecast is given at 10 m. The app projects it to your flight height with a profile that changes by day and night, and tells you values above 10 m are estimated.</p></details>
-      <details><summary>Do I need an account?</summary><p>No. There is no account, no ads and no tracking. Only the place's coordinate, rounded to about 1 km, goes to Apple Weather for the forecast.</p></details>
-      <details><summary>Which country's rules does it use?</summary><p>The rules of the country where you fly, never your phone's language or region. Brazil has the most detail: DECEA, ANAC, SARPAS and INMET.</p></details>
+      <details><summary>How does the app know the wind at 400 ft?</summary><p>The Apple Weather forecast is given at 33 ft (10 m). The app projects it to your flight height with a profile that changes by day and night, and tells you values above 33 ft are estimated.</p></details>
+      <details><summary>Where do the airspace zones come from?</summary><p>In Brazil, from DECEA's public GeoAISWEB service: aerodromes, runways, heliports, restricted areas and helicopter corridors, with the distances of ICA 100-40/2026. Outside Brazil the app shows the general rules of the country and links to its official tools.</p></details>
+      <details><summary>Do I need an account? What about my location?</summary><p>No account, no ads, no tracking. Only the place's coordinate, rounded to about 1 km, goes to Apple Weather for the forecast. Zones are worked out on the iPhone, and your documents stay on it.</p></details>
+      <details><summary>Does it work offline?</summary><p>The zone map, the rules and the pilot wallet work offline. The forecast needs the internet to update; widgets show the last one downloaded.</p></details>
       <details><summary>How do I cancel?</summary><p>On iPhone, in Settings ▸ your name ▸ Subscriptions ▸ Drone Briefing. Cancel at least 24 hours before the end of the period and it won't renew.</p></details>
     </div>
   </div>
@@ -170,19 +273,24 @@
 
 <section class="chamada">
   <div class="largura">
-    <h2>Check before take-off.</h2>
+    <h2>Your next flight starts with a briefing.</h2>
     <p>Free to download, with Pro free for 7 days.</p>
-    <a class="botao" href="https://apps.apple.com/app/idAPPLEID">Download on the App Store</a>
+    <a class="botao grande" href="https://apps.apple.com/app/idAPPLEID">Download on the App Store</a>
   </div>
 </section>
 
 </main>
 
+<div class="barra-fixa">
+  <span>Drone Briefing · free</span>
+  <a class="botao" href="https://apps.apple.com/app/idAPPLEID">Get it</a>
+</div>
+
 <footer class="rodape">
   <div class="largura">
     <div>
       <p>© 2026 Leonardo Nogueira. Drone Briefing for iPhone, iPad and Apple Watch.</p>
-      <p class="legal">A planning tool: it does not replace flight authorization or the pilot's judgment. Weather: Apple Weather. Kp: NOAA SWPC. Brazilian warnings: INMET. Apple, iPhone, iPad and Apple Watch are trademarks of Apple Inc.</p>
+      <p class="legal">A planning tool: it does not replace flight authorization or the pilot's judgment. Weather: Apple Weather. Brazilian airspace: DECEA (GeoAISWEB). Kp: NOAA SWPC. Brazilian warnings: INMET. Screens show sample data. Apple, iPhone, iPad and Apple Watch are trademarks of Apple Inc.</p>
     </div>
     <nav aria-label="Footer">
       <a href="support.html">Support</a>
