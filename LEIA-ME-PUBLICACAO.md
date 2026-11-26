@@ -43,9 +43,8 @@ Espere o DNS propagar (minutos a algumas horas) e marque **Enforce HTTPS** em Se
 
 ## 3. Antes do lançamento: link e selo da App Store
 
-- Troque `APPLEID` pelo Apple ID numérico do app (App Store Connect ▸ Informações do app ▸ Apple ID) em
-  `index.html` e `en/index.html` (4 links em cada). Até lá, os botões levam a uma página inexistente: **publique o
-  site já (as páginas de privacidade e suporte são exigidas pela revisão), mas troque o link no dia do lançamento.**
+- Feito: os links da App Store em `index.html` e `en/index.html` (e o `downloadUrl` do JSON-LD) usam o Apple ID
+  do app, **6838916058** (`https://apps.apple.com/app/id6838916058`).
 - Selos oficiais, sem modificações, do App Store Marketing Tools: **"Baixar na App Store"** (português, preto, SVG)
   em `assets/badge-app-store-pt.svg` e **"Download on the App Store"** (inglês EUA, preto, SVG) em
   `assets/badge-app-store-en.svg`. Sem os arquivos, a página mostra um botão de texto.
