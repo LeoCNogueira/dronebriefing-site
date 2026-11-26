@@ -56,6 +56,8 @@ h1, h2, h3 { font-family: var(--display); line-height: 1.08; letter-spacing: -.0
   box-shadow: 0 14px 30px -14px rgba(242, 106, 27, .9); }
 .cta:hover { filter: brightness(1.06); }
 .cta svg { width: 22px; height: 22px; flex: none; }
+.badge { display: inline-block; padding: 14px; margin: -14px; line-height: 0; border-radius: 12px; }
+.badge img { height: 56px; width: auto; }
 .cta-note { margin: 10px 0 0; font-size: .88rem; text-align: center; }
 .only-other { display: none; }
 html.not-ios .only-other { display: block; }
@@ -73,8 +75,9 @@ h1 { font-size: clamp(2.35rem, 9vw, 3.7rem); margin: 0 0 16px; font-weight: 800;
 h1 em { font-style: normal; color: var(--orange); }
 .sub { margin: 0 0 26px; font-size: 1.12rem; color: #C9D6F2; max-width: 30em; }
 .hero .cta-box { max-width: 400px; }
+.hero .cta-note { text-align: left; }
 .hero .cta-note { color: #C9D6F2; }
-.ticks { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 16px; margin: 18px 0 0; padding: 0; font-size: .9rem; color: #C9D6F2; max-width: 400px; }
+.ticks { list-style: none; display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 6px 16px; margin: 18px 0 0; padding: 0; font-size: .9rem; color: #C9D6F2; max-width: 400px; }
 .ticks li { display: flex; align-items: center; gap: 6px; }
 .ticks svg { width: 15px; height: 15px; color: #5FD08F; }
 
@@ -169,7 +172,7 @@ h2 { font-size: clamp(1.7rem, 6.4vw, 2.4rem); margin: 0 0 10px; font-weight: 800
 
 /* Chamada final */
 .final { background: radial-gradient(700px 320px at 50% 0%, rgba(30, 91, 216, .5), transparent 70%), var(--night); color: #fff; text-align: center; padding: 60px 0; }
-.final img { width: 84px; height: 84px; border-radius: 20px; margin: 0 auto 18px; box-shadow: 0 16px 40px rgba(0,0,0,.4); }
+.final .app-icon { width: 84px; height: 84px; border-radius: 20px; margin: 0 auto 18px; box-shadow: 0 16px 40px rgba(0,0,0,.4); }
 .final h2 { margin-bottom: 8px; }
 .final p { color: #C9D6F2; margin: 0 0 24px; }
 .final .cta-box { max-width: 400px; margin: 0 auto; }
@@ -206,7 +209,7 @@ footer a { color: var(--muted); }
         <h1>Pode voar aqui, <em>agora?</em></h1>
         <p class="sub">O Drone Briefing responde antes de você tirar o drone da mochila: vento na altura do voo, zonas de aeroportos e helipontos do DECEA, chuva, Kp e as regras de 2026 num só veredito.</p>
         <div class="cta-box">
-          <a class="cta" data-cta="hero" href="https://apps.apple.com/br/app/id6838916058"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.97-3.46-1.07-1.57-2.74-1.78-3.33-1.8-1.42-.14-2.77.83-3.49.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.78 2.29-1.61 2.8-.41 6.94 1.16 9.21.77 1.11 1.68 2.36 2.88 2.31 1.16-.05 1.6-.75 3-.75s1.79.75 3.01.72c1.25-.02 2.04-1.13 2.8-2.25.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.42-.93-2.47-3.71zM14.08 5.85c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.77-.97 2.82 1.03.08 2.07-.52 2.71-1.28z"/></svg>Baixar grátis na App Store</a>
+          <a class="badge" data-cta="hero" href="https://apps.apple.com/app/apple-store/id6838916058?pt=129602558&amp;ct=Instagram&amp;mt=8"><img src="../assets/badge-app-store-pt.svg" alt="Baixar o Drone Briefing na App Store" width="168" height="56"></a>
           <p class="cta-note only-other">Disponível para iPhone, iPad e Apple Watch. Abra este link no iPhone para instalar.</p>
         </div>
         <ul class="ticks">
@@ -322,11 +325,11 @@ footer a { color: var(--muted); }
 
 <section class="final">
   <div class="w">
-    <img src="../assets/icon-256.png" alt="" width="84" height="84" loading="lazy">
+    <img class="app-icon" src="../assets/icon-256.png" alt="" width="84" height="84" loading="lazy">
     <h2>Seu próximo voo começa com um briefing.</h2>
     <p>Grátis para baixar, com o Pro grátis por 7 dias.</p>
     <div class="cta-box">
-      <a class="cta" data-cta="final" href="https://apps.apple.com/br/app/id6838916058"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.97-3.46-1.07-1.57-2.74-1.78-3.33-1.8-1.42-.14-2.77.83-3.49.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.78 2.29-1.61 2.8-.41 6.94 1.16 9.21.77 1.11 1.68 2.36 2.88 2.31 1.16-.05 1.6-.75 3-.75s1.79.75 3.01.72c1.25-.02 2.04-1.13 2.8-2.25.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.42-.93-2.47-3.71zM14.08 5.85c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.77-.97 2.82 1.03.08 2.07-.52 2.71-1.28z"/></svg>Baixar grátis na App Store</a>
+      <a class="badge" data-cta="final" href="https://apps.apple.com/app/apple-store/id6838916058?pt=129602558&amp;ct=Instagram&amp;mt=8"><img src="../assets/badge-app-store-pt.svg" alt="Baixar o Drone Briefing na App Store" width="168" height="56"></a>
       <p class="cta-note only-other">Para iPhone, iPad e Apple Watch. Abra este link no iPhone para instalar.</p>
     </div>
   </div>
@@ -349,7 +352,7 @@ footer a { color: var(--muted); }
 <div class="sticky" id="sticky" aria-hidden="true">
   <img src="../assets/icon-64.png" alt="" width="44" height="44">
   <div class="t"><b>Drone Briefing</b><span>Grátis · iPhone e Apple Watch</span></div>
-  <a class="cta" data-cta="sticky" href="https://apps.apple.com/br/app/id6838916058" tabindex="-1">Baixar</a>
+  <a class="cta" data-cta="sticky" href="https://apps.apple.com/app/apple-store/id6838916058?pt=129602558&amp;ct=Instagram&amp;mt=8" tabindex="-1">Baixar</a>
 </div>
 
 <script>
