@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Drone Briefing: pode voar aqui, agora?</title>
+<meta name="description" content="Vento na altura do voo, zonas do DECEA, chuva, Kp e as regras de 2026 num só veredito, para o seu drone. Grátis no iPhone.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://dronebriefing.ravendronevideos.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Drone Briefing">
+<meta property="og:title" content="Pode voar aqui, agora? Pergunte ao Drone Briefing">
+<meta property="og:description" content="Vento a 60 m, helipontos escondidos e as regras de 2026 num só veredito. Grátis no iPhone.">
+<meta property="og:url" content="https://dronebriefing.ravendronevideos.com.br/instagram/">
+<meta property="og:image" content="https://dronebriefing.ravendronevideos.com.br/assets/icon-512.png">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0A1A3A">
+<link rel="icon" type="image/png" href="../assets/icon-64.png">
+<link rel="apple-touch-icon" href="../assets/icon-180.png">
+<link rel="preload" as="image" href="../assets/screens/now-pt.jpg?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --night: #0A1A3A;          /* topo e chamada final */
+  --night-2: #10275A;
+  --blue: #1E5BD8;
+  --sky: #8FB0FF;
+  --orange: #F26A1B;
+  --on-orange: #1A0E05;
+  --go: #1F9D55; --caution: #C98A00; --nogo: #D33A2C;
+  --bg: #F4F7FC; --card: #FFFFFF; --ink: #0E1726; --muted: #566176; --line: #DDE4F0;
+  --shadow: 0 10px 30px rgba(15, 58, 153, .10);
+  --font: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --display: "Bricolage Grotesque", var(--font);
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0B111C; --card: #141C2B; --ink: #EEF2FA; --muted: #9AA6BC; --line: #243049; --shadow: 0 10px 30px rgba(0,0,0,.35); }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 var(--font); -webkit-font-smoothing: antialiased; padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px)); }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+p, li, summary { text-wrap: pretty; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.08; letter-spacing: -.015em; text-wrap: balance; }
+:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; border-radius: 6px; }
+.w { width: min(1040px, 100% - 32px); margin-inline: auto; }
+
+/* Botão de download */
+.cta { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 58px; padding: 12px 22px;
+  border-radius: 16px; background: var(--orange); color: var(--on-orange); font-weight: 700; font-size: 1.1rem; text-decoration: none;
+  box-shadow: 0 14px 30px -14px rgba(242, 106, 27, .9); }
+.cta:hover { filter: brightness(1.06); }
+.cta svg { width: 22px; height: 22px; flex: none; }
+.cta-note { margin: 10px 0 0; font-size: .88rem; text-align: center; }
+.only-other { display: none; }
+html.not-ios .only-other { display: block; }
+
+/* Topo */
+.hero { background: radial-gradient(900px 420px at 85% -5%, rgba(30, 91, 216, .55), transparent 70%), var(--night); color: #fff;
+  padding: max(18px, env(safe-area-inset-top, 0px)) 0 0; overflow: hidden; }
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 28px; }
+.brand { display: flex; align-items: center; gap: 10px; font: 700 1.08rem var(--display); text-decoration: none; }
+.brand img { width: 36px; height: 36px; border-radius: 9px; }
+.pill { font-size: .8rem; font-weight: 600; color: #C9D6F2; border: 1px solid rgba(255,255,255,.25); border-radius: 999px; padding: 4px 11px; white-space: nowrap; }
+.hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; }
+.hero-copy { padding-bottom: 48px; }
+h1 { font-size: clamp(2.35rem, 9vw, 3.7rem); margin: 0 0 16px; font-weight: 800; }
+h1 em { font-style: normal; color: var(--orange); }
+.sub { margin: 0 0 26px; font-size: 1.12rem; color: #C9D6F2; max-width: 30em; }
+.hero .cta-box { max-width: 400px; }
+.hero .cta-note { color: #C9D6F2; }
+.ticks { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 16px; margin: 18px 0 0; padding: 0; font-size: .9rem; color: #C9D6F2; max-width: 400px; }
+.ticks li { display: flex; align-items: center; gap: 6px; }
+.ticks svg { width: 15px; height: 15px; color: #5FD08F; }
+
+.phone-stage { position: relative; display: flex; justify-content: center; height: 470px; }
+.phone { width: 270px; border-radius: 44px 44px 0 0; padding: 9px 9px 0; background: #05080F; box-shadow: 0 -10px 60px rgba(30, 91, 216, .45), inset 0 0 0 2px #2a3140; overflow: hidden; }
+.phone img { border-radius: 36px 36px 0 0; width: 100%; }
+.chip { position: absolute; z-index: 2; background: var(--card); color: var(--ink); border: 1px solid var(--line); box-shadow: 0 16px 36px rgba(0, 0, 0, .28);
+  border-radius: 16px; padding: 9px 13px; font-size: .82rem; color: var(--muted); white-space: nowrap; }
+.chip b { display: block; color: var(--ink); font-size: 1rem; }
+.chip i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; font-style: normal; }
+.chip.a { left: calc(50% - 205px); top: 120px; }
+.chip.b { right: calc(50% - 205px); top: 260px; }
+@media (max-width: 820px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 0; }
+  .hero-copy { padding-bottom: 34px; }
+  .hero .cta-box, .ticks { max-width: none; }
+  .phone-stage { height: 400px; }
+  .phone { width: 240px; }
+  .chip.a { left: max(0px, calc(50% - 185px)); top: 90px; }
+  .chip.b { right: max(0px, calc(50% - 185px)); top: 230px; }
+}
+@media (max-width: 360px) { .chip { font-size: .74rem; } .chip b { font-size: .9rem; } }
+
+/* Fontes */
+.sources { background: var(--night-2); color: #C9D6F2; text-align: center; padding: 16px 0; font-size: .9rem; }
+.sources b { color: #fff; font-weight: 600; }
+
+/* Seções */
+section { padding: 54px 0; }
+section.alt { background: var(--card); border-block: 1px solid var(--line); }
+h2 { font-size: clamp(1.7rem, 6.4vw, 2.4rem); margin: 0 0 10px; font-weight: 800; }
+.lead { margin: 0 0 26px; color: var(--muted); font-size: 1.05rem; max-width: 36em; }
+.kicker { margin: 0 0 8px; font-size: .82rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--orange); }
+
+.pains { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 760px) { .pains { grid-template-columns: 1fr; } }
+.pains li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 16px; box-shadow: var(--shadow); }
+.pains .n { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; background: color-mix(in srgb, var(--blue) 14%, transparent); color: var(--blue); font: 800 1.1rem var(--display); }
+@media (prefers-color-scheme: dark) { .pains .n { color: var(--sky); } }
+.pains h3 { margin: 2px 0 4px; font-size: 1.1rem; }
+.pains p { margin: 0; color: var(--muted); font-size: .97rem; }
+
+/* Telas */
+.rail { display: grid; grid-auto-flow: column; grid-auto-columns: min(250px, 70%); gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 16px 18px; margin: 0 -16px;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.rail::-webkit-scrollbar { display: none; }
+.shot { scroll-snap-align: center; margin: 0; }
+.shot .frame { border-radius: 34px; padding: 7px; background: #05080F; box-shadow: var(--shadow), inset 0 0 0 2px #2a3140; }
+.shot img { border-radius: 28px; width: 100%; }
+.shot figcaption { padding: 14px 4px 0; }
+.shot figcaption b { display: block; font: 700 1.05rem var(--display); margin-bottom: 2px; }
+.shot figcaption span { color: var(--muted); font-size: .94rem; }
+.tag-pro { display: inline-block; font: 700 .68rem var(--font); letter-spacing: .05em; color: #fff; background: var(--blue); border-radius: 6px; padding: 2px 6px; margin-left: 6px; vertical-align: 2px; }
+.swipe { display: flex; align-items: center; gap: 6px; margin: 0 0 14px; color: var(--muted); font-size: .88rem; }
+@media (min-width: 1100px) { .swipe { display: none; } .rail { grid-auto-flow: row; grid-template-columns: repeat(5, 1fr); overflow: visible; margin: 0; padding: 4px 0 0; } }
+
+/* Passos */
+.steps { list-style: none; counter-reset: s; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 760px) { .steps { grid-template-columns: 1fr; } }
+.steps li { counter-increment: s; position: relative; padding: 16px 16px 16px 64px; border-radius: 18px; background: var(--bg); border: 1px solid var(--line); }
+.steps li::before { content: counter(s); position: absolute; left: 16px; top: 16px; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--orange); color: var(--on-orange); font: 800 1rem var(--display); }
+.steps b { display: block; margin-bottom: 2px; }
+.steps span { color: var(--muted); font-size: .96rem; }
+
+/* Planos */
+.plans { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
+@media (max-width: 760px) { .plans { grid-template-columns: 1fr; } }
+.plan { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+.plan.pro { border: 2px solid var(--orange); }
+.plan h3 { margin: 0 0 4px; font-size: 1.25rem; }
+.plan .price { margin: 0 0 12px; font: 800 1.6rem var(--display); }
+.plan .price small { font: 600 .9rem var(--font); color: var(--muted); }
+.plan ul { margin: 0; padding-left: 20px; color: var(--muted); }
+.plan li { margin: 4px 0; }
+.plan li::marker { color: var(--go); }
+.fine { margin: 14px 0 0; font-size: .86rem; color: var(--muted); }
+
+/* Autor */
+.author { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; background: var(--card); border: 1px solid var(--line); border-left: 5px solid var(--orange); border-radius: 20px; padding: 22px; box-shadow: var(--shadow); }
+.author img { width: 72px; height: 72px; border-radius: 16px; }
+.author blockquote { margin: 0; font: 700 1.2rem/1.35 var(--display); }
+.author p { margin: 8px 0 0; color: var(--muted); font-size: .94rem; }
+@media (max-width: 520px) { .author { grid-template-columns: 1fr; } }
+
+/* Dúvidas */
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary { cursor: pointer; list-style: none; padding: 16px 32px 16px 0; font-weight: 700; position: relative; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 4px; top: 12px; font-size: 1.5rem; font-weight: 400; color: var(--orange); }
+.faq details[open] summary::after { content: "–"; }
+.faq p { margin: 0 0 16px; color: var(--muted); }
+
+/* Chamada final */
+.final { background: radial-gradient(700px 320px at 50% 0%, rgba(30, 91, 216, .5), transparent 70%), var(--night); color: #fff; text-align: center; padding: 60px 0; }
+.final img { width: 84px; height: 84px; border-radius: 20px; margin: 0 auto 18px; box-shadow: 0 16px 40px rgba(0,0,0,.4); }
+.final h2 { margin-bottom: 8px; }
+.final p { color: #C9D6F2; margin: 0 0 24px; }
+.final .cta-box { max-width: 400px; margin: 0 auto; }
+.final .cta-note { color: #C9D6F2; }
+
+footer { padding: 26px 0 30px; font-size: .84rem; color: var(--muted); }
+footer nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 10px; }
+footer a { color: var(--muted); }
+
+/* Barra fixa (aparece depois do primeiro botão) */
+.sticky { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+  background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: saturate(1.6) blur(14px); -webkit-backdrop-filter: saturate(1.6) blur(14px);
+  border-top: 1px solid var(--line); display: flex; align-items: center; gap: 12px; transform: translateY(110%); transition: transform .25s ease; }
+.sticky.on { transform: none; }
+@media (prefers-reduced-motion: reduce) { .sticky { transition: none; } }
+.sticky img { width: 44px; height: 44px; border-radius: 11px; flex: none; }
+.sticky .t { flex: 1; min-width: 0; line-height: 1.25; }
+.sticky .t b { display: block; font-size: .98rem; }
+.sticky .t span { font-size: .8rem; color: var(--muted); }
+.sticky .cta { width: auto; min-height: 46px; padding: 10px 20px; font-size: 1rem; border-radius: 999px; box-shadow: none; }
+@media (min-width: 900px) { .sticky { justify-content: center; } .sticky .t { flex: 0 1 auto; } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="w">
+    <div class="bar">
+      <a class="brand" href="../"><img src="../assets/icon-64.png" alt="" width="36" height="36">Drone Briefing</a>
+      <span class="pill">Novo no iPhone</span>
+    </div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1>Pode voar aqui, <em>agora?</em></h1>
+        <p class="sub">O Drone Briefing responde antes de você tirar o drone da mochila: vento na altura do voo, zonas de aeroportos e helipontos do DECEA, chuva, Kp e as regras de 2026 num só veredito.</p>
+        <div class="cta-box">
+          <a class="cta" data-cta="hero" href="https://apps.apple.com/br/app/id6838916058"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.97-3.46-1.07-1.57-2.74-1.78-3.33-1.8-1.42-.14-2.77.83-3.49.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.78 2.29-1.61 2.8-.41 6.94 1.16 9.21.77 1.11 1.68 2.36 2.88 2.31 1.16-.05 1.6-.75 3-.75s1.79.75 3.01.72c1.25-.02 2.04-1.13 2.8-2.25.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.42-.93-2.47-3.71zM14.08 5.85c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.77-.97 2.82 1.03.08 2.07-.52 2.71-1.28z"/></svg>Baixar grátis na App Store</a>
+          <p class="cta-note only-other">Disponível para iPhone, iPad e Apple Watch. Abra este link no iPhone para instalar.</p>
+        </div>
+        <ul class="ticks">
+          <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Grátis para baixar</li>
+          <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Sem conta</li>
+          <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Sem anúncios</li>
+        </ul>
+      </div>
+      <div class="phone-stage" aria-hidden="true">
+        <div class="phone"><img src="../assets/screens/now-pt.jpg?v=2" alt="" width="414" height="900" fetchpriority="high"></div>
+        <div class="chip a"><b><i style="background:var(--go)"></i>14 km/h a 60 m</b>35% do limite do Mini 4 Pro</div>
+        <div class="chip b"><b><i style="background:var(--caution)"></i>Heliponto a 2,5 km</b>até 91 m neste ponto</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="sources"><div class="w">Dados de <b>Apple Weather</b> · <b>DECEA</b> · <b>INMET</b> · <b>NOAA</b> · <b>6.136</b> aeródromos e helipontos</div></div>
+
+<main>
+
+<section>
+  <div class="w">
+    <p class="kicker">O que o app do tempo não mostra</p>
+    <h2>Quem descobre no ar é você.</h2>
+    <p class="lead">A previsão comum fala do vento no chão e não sabe nada de espaço aéreo. O Drone Briefing olha para onde o drone vai estar.</p>
+    <ul class="pains">
+      <li><span class="n">≋</span><div><h3>Lá em cima venta mais</h3><p>Os 10 km/h da previsão viram rajadas bem mais fortes a 60 ou 120 m. É ali que a bateria vai embora.</p></div></li>
+      <li><span class="n">⌖</span><div><h3>O heliponto que ninguém vê</h3><p>Na praia, no condomínio ou no hotel ao lado pode haver uma zona de restrição de vários quilômetros.</p></div></li>
+      <li><span class="n">!</span><div><h3>Regras novas em 2026</h3><p>Desde julho, 60 m no recreativo e SARPAS para qualquer peso. E muda de novo em janeiro de 2027.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="w">
+    <p class="kicker">Por dentro do app</p>
+    <h2>Tudo o que você confere antes de decolar, num olhar.</h2>
+    <p class="swipe" aria-hidden="true">Deslize para ver <svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8h10m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+    <div class="rail" tabindex="0" aria-label="Telas do app">
+      <figure class="shot"><div class="frame"><img src="../assets/screens/now-pt.jpg?v=2" alt="Tela Agora com o veredito Pode voar até 18:00" width="414" height="900" loading="lazy"></div><figcaption><b>O veredito</b><span>Bom para voar, voe com cuidado ou fique no chão, com o motivo e até quando vale.</span></figcaption></figure>
+      <figure class="shot"><div class="frame"><img src="../assets/screens/wind-pt.jpg?v=2" alt="Vento a 10, 30, 60 e 120 metros com o teto recreativo marcado" width="414" height="900" loading="lazy"></div><figcaption><b>Vento em altura</b><span>10, 30, 60 e 120 m, com rajadas, comparados ao limite do seu drone.</span></figcaption></figure>
+      <figure class="shot"><div class="frame"><img src="../assets/screens/map-pt.jpg?v=2" alt="Mapa com zonas de helipontos e aeroportos do DECEA" width="414" height="900" loading="lazy"></div><figcaption><b>Zonas do DECEA</b><span>Aeroportos, helipontos e áreas restritas no mapa, com a altura máxima no ponto.</span></figcaption></figure>
+      <figure class="shot"><div class="frame"><img src="../assets/screens/week-pt.jpg?v=2" alt="A semana com a melhor janela de cada dia" width="414" height="900" loading="lazy"></div><figcaption><b>A melhor janela</b><span>O melhor horário de cada dia da semana nos locais onde você voa.</span></figcaption></figure>
+      <figure class="shot"><div class="frame"><img src="../assets/screens/pilot-pt.jpg?v=2" alt="Carteira do piloto com documentos em dia" width="414" height="900" loading="lazy"></div><figcaption><b>Carteira do piloto <span class="tag-pro">PRO</span></b><span>ANAC, SISANT, seguro e SARPAS à mão, até sem internet.</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <p class="kicker">Do sofá à decolagem</p>
+    <h2>Três passos, menos de um minuto.</h2>
+    <p class="lead">Funciona com Mini, Air, Mavic, Avata, Neo, Flip ou o perfil do seu drone.</p>
+    <ol class="steps">
+      <li><b>Escolha o drone e a altura</b><span>Recreativo até 60 m ou trabalho até 120 m.</span></li>
+      <li><b>Leia o veredito</b><span>O que pesou, até quando vale e a melhor janela do dia.</span></li>
+      <li><b>Peça no SARPAS e voe</b><span>O app leva ao SARPAS e confere o protocolo depois.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="w">
+    <p class="kicker">Preço</p>
+    <h2>A segurança é grátis.</h2>
+    <p class="lead">O veredito, o vento em altura, o mapa de zonas, as regras e os avisos do INMET nunca ficam atrás do Pro.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Grátis</h3>
+        <p class="price">R$ 0</p>
+        <ul>
+          <li>Veredito com vento em altura, chuva e Kp</li>
+          <li>Mapa de zonas do DECEA e regras de 2026</li>
+          <li>Avisos do INMET e previsão de 3 dias</li>
+        </ul>
+      </div>
+      <div class="plan pro">
+        <h3>Pro <span class="tag-pro">7 DIAS GRÁTIS</span></h3>
+        <p class="price">R$ 59,90 <small>por ano · ou R$ 149,90 vitalício</small></p>
+        <ul>
+          <li>7 dias de previsão e locais ilimitados</li>
+          <li>Widgets, Live Activity e Apple Watch</li>
+          <li>Carteira do piloto, SARPAS e horas do DJI Fly</li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">Cancele o teste antes do 7º dia e não paga nada. Compras pela Apple.</p>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <div class="author">
+      <img src="../assets/icon-256.png" alt="" width="72" height="72" loading="lazy">
+      <div>
+        <blockquote>“Eu queria um app que respondesse uma pergunta só: dá para voar aqui, agora, com este drone?”</blockquote>
+        <p>Leonardo Nogueira, piloto de drone da Raven Drone Videos. Feito para as regras e os dados do Brasil.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="w faq">
+    <h2>Antes de baixar</h2>
+    <details><summary>Substitui a autorização no SARPAS?</summary><p>Não. O Drone Briefing é uma ferramenta de planejamento. A autorização continua sendo pedida no SARPAS, e a decisão final é sempre do piloto.</p></details>
+    <details><summary>Preciso criar conta? E a minha localização?</summary><p>Não há conta, anúncios nem rastreio. Só a coordenada do local, arredondada para cerca de 1 km, vai ao Apple Weather para buscar a previsão. As zonas são calculadas no próprio iPhone.</p></details>
+    <details><summary>Funciona sem internet?</summary><p>O mapa de zonas, as regras e a carteira do piloto funcionam offline. A previsão precisa de internet para atualizar.</p></details>
+    <details><summary>Tem para Android?</summary><p>Não. O Drone Briefing é para iPhone, iPad e Apple Watch, com iOS 18 ou mais novo.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="w">
+    <img src="../assets/icon-256.png" alt="" width="84" height="84" loading="lazy">
+    <h2>Seu próximo voo começa com um briefing.</h2>
+    <p>Grátis para baixar, com o Pro grátis por 7 dias.</p>
+    <div class="cta-box">
+      <a class="cta" data-cta="final" href="https://apps.apple.com/br/app/id6838916058"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M16.37 12.6c-.02-2.3 1.88-3.4 1.97-3.46-1.07-1.57-2.74-1.78-3.33-1.8-1.42-.14-2.77.83-3.49.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.78 2.29-1.61 2.8-.41 6.94 1.16 9.21.77 1.11 1.68 2.36 2.88 2.31 1.16-.05 1.6-.75 3-.75s1.79.75 3.01.72c1.25-.02 2.04-1.13 2.8-2.25.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.42-.93-2.47-3.71zM14.08 5.85c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.77-.97 2.82 1.03.08 2.07-.52 2.71-1.28z"/></svg>Baixar grátis na App Store</a>
+      <p class="cta-note only-other">Para iPhone, iPad e Apple Watch. Abra este link no iPhone para instalar.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="w">
+    <nav aria-label="Links">
+      <a href="../">Site do Drone Briefing</a>
+      <a href="https://apps.ravendronevideos.com.br/">Outros apps Raven</a>
+      <a href="../privacy.html">Privacidade</a>
+      <a href="../support.html">Suporte</a>
+    </nav>
+    <p>© 2026 Leonardo Nogueira. Ferramenta de planejamento: não substitui a autorização no SARPAS nem a avaliação do piloto. Telas com dados de exemplo. Apple, iPhone, iPad e Apple Watch são marcas da Apple Inc.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <img src="../assets/icon-64.png" alt="" width="44" height="44">
+  <div class="t"><b>Drone Briefing</b><span>Grátis · iPhone e Apple Watch</span></div>
+  <a class="cta" data-cta="sticky" href="https://apps.apple.com/br/app/id6838916058" tabindex="-1">Baixar</a>
+</div>
+
+<script>
+(function () {
+  var ua = navigator.userAgent || '';
+  var ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  if (!ios) document.documentElement.classList.add('not-ios');
+
+  // Barra fixa: aparece quando o botão do topo sai da tela e some na chamada final
+  var bar = document.getElementById('sticky');
+  var link = bar.querySelector('a');
+  var heroCta = document.querySelector('[data-cta="hero"]');
+  var finalCta = document.querySelector('.final');
+  if (!('IntersectionObserver' in window)) { bar.classList.add('on'); return; }
+  var heroOut = false, finalIn = false;
+  function update() {
+    var show = heroOut && !finalIn;
+    bar.classList.toggle('on', show);
+    bar.setAttribute('aria-hidden', show ? 'false' : 'true');
+    link.tabIndex = show ? 0 : -1;
+  }
+  new IntersectionObserver(function (e) { heroOut = !e[0].isIntersecting && e[0].boundingClientRect.top < 0; update(); }).observe(heroCta);
+  new IntersectionObserver(function (e) { finalIn = e[0].isIntersecting; update(); }).observe(finalCta);
+})();
+</script>
+</body>
+</html>
