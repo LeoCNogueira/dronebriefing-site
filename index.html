@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=2026-11-25c">
+<link rel="stylesheet" href="style.css?v=2026-11-27">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -87,7 +87,7 @@
 
 <section class="provas" aria-label="Fontes e números">
   <div class="largura">
-    <p class="fontes">Com dados de <b>Apple Weather</b> · <b>DECEA</b> · <b>INMET</b> · <b>NOAA</b> · <b>IGS</b> (satélites)</p>
+    <p class="fontes">Com dados de <b>Apple Weather</b> · <b>DECEA</b> · <b>INMET</b> · <b>NOAA</b> · <b>IGS</b> (satélites) · <b>FAA</b> e <b>NWS</b> nos EUA, na 1.2</p>
     <ul class="numeros">
       <li><strong>6.136</strong><span>aeródromos e helipontos do DECEA</span></li>
       <li><strong>10 a 120 m</strong><span>vento na altura do seu voo</span></li>
@@ -156,6 +156,20 @@
     </article>
 
     <article class="recurso invertido">
+      <div class="midia"><div class="aparelho"><img src="assets/screens/us-now-pt.jpg" alt="Tela Agora no National Mall, em Washington: Fique no chão por um TFR, com um aviso do NWS" width="450" height="978" loading="lazy"></div></div>
+      <div>
+        <p class="sobre">Espaço aéreo dos EUA <span class="selo-breve">Na versão 1.2</span></p>
+        <h3>Vai voar nos Estados Unidos? O app também sabe.</h3>
+        <p>Nos EUA, a grade LAANC da FAA com a altura que dá para autorizar, as classes B, C, D e E a partir do solo, os TFR com horário, as áreas proibidas e de segurança nacional e os estádios. Mais os avisos do NWS e o METAR do aeroporto mais próximo, com os mínimos da Part 107.</p>
+        <ul class="lista-ok">
+          <li>Voo Part 107 ou recreativo (44809)</li>
+          <li>Pedido de LAANC pelo app: provedores aprovados pela FAA ou FAADroneZone</li>
+          <li>A FAA recebe só uma área arredondada, nunca o seu local exato</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="recurso">
       <div class="midia"><div class="aparelho"><img src="assets/screens/week-pt.jpg?v=2" alt="A semana com a melhor janela de cada dia" width="450" height="978" loading="lazy"></div></div>
       <div>
         <p class="sobre">Planejamento</p>
@@ -169,7 +183,7 @@
       </div>
     </article>
 
-    <article class="recurso">
+    <article class="recurso invertido">
       <div class="midia"><div class="aparelho"><img src="assets/screens/pilot-pt.jpg?v=2" alt="Carteira do piloto com foto, documentos e piloto em dia" width="450" height="978" loading="lazy"></div></div>
       <div>
         <p class="sobre">Carteira do piloto <span class="selo-pro">PRO</span></p>
@@ -211,7 +225,7 @@
 <section class="secao" id="precos">
   <div class="largura">
     <h2 class="centro">A segurança é grátis. O Pro é para quem voa sempre.</h2>
-    <p class="introducao centro">O veredito, o vento em altura, a chuva, o Kp, o mapa de zonas, as regras e os avisos do INMET nunca ficam atrás do Pro.</p>
+    <p class="introducao centro">O veredito, o vento em altura, a chuva, o Kp, o mapa de zonas, as regras e os avisos oficiais nunca ficam atrás do Pro.</p>
     <div class="planos">
       <div class="plano">
         <h3>Grátis</h3>
@@ -221,6 +235,7 @@
           <li>Veredito com vento em altura, chuva e Kp</li>
           <li>Mapa de zonas do DECEA e regras de 2026</li>
           <li>Avisos do INMET</li>
+          <li>Nos EUA: espaço aéreo da FAA e avisos do NWS (na 1.2)</li>
           <li>Previsão de 3 dias e 1 local salvo</li>
           <li>Widget pequeno e a Siri</li>
         </ul>
@@ -265,9 +280,9 @@
       <details><summary>De onde vêm as zonas do mapa?</summary><p>Do GeoAISWEB, o serviço público de dados aeronáuticos do DECEA: aeródromos, pistas, helipontos, áreas proibidas, restritas e perigosas e corredores de helicópteros. As zonas de aeroportos e helipontos seguem as distâncias da ICA 100-40/2026. Aeródromos sem a pista nos dados aparecem como "zona estimada". O app mostra a emenda dos dados.</p></details>
       <details><summary>Por que 60 m no voo recreativo?</summary><p>A ICA 100-40/2026 limita o voo recreativo a 60 m de altura e 300 m de distância. O voo de trabalho vai até 120 m, com as condições da norma. O app mostra sempre o limite mais restritivo para o seu caso.</p></details>
       <details><summary>Como o app sabe o vento a 60 ou 120 m?</summary><p>A previsão do Apple Weather é dada a 10 m. O app projeta o vento até a altura do voo com um perfil que muda de dia e de noite, e avisa que o valor acima de 10 m é estimado.</p></details>
-      <details><summary>Preciso criar conta? E a minha localização?</summary><p>Não há conta, anúncios nem rastreio. Só a coordenada do local, arredondada para cerca de 1 km, vai ao Apple Weather para buscar a previsão. As zonas são calculadas no próprio iPhone, e seus documentos ficam nele.</p></details>
+      <details><summary>Preciso criar conta? E a minha localização?</summary><p>Não há conta, anúncios nem rastreio. Só a coordenada do local, arredondada para cerca de 1 km, vai ao Apple Weather para buscar a previsão. Nos EUA (a partir da 1.2), ela vai também à FAA, ao NWS e ao aviationweather.gov, que são serviços públicos. As zonas são calculadas no próprio iPhone, e seus documentos ficam nele.</p></details>
       <details><summary>Funciona sem internet?</summary><p>O mapa de zonas, as regras e a carteira do piloto funcionam offline. A previsão precisa de internet para atualizar; os widgets mostram a última baixada.</p></details>
-      <details><summary>Funciona fora do Brasil?</summary><p>O clima, o vento, o Kp e os satélites funcionam em qualquer lugar, e as regras seguem o país do local. O mapa de zonas, os avisos do INMET, o SARPAS e a central do piloto são do Brasil.</p></details>
+      <details><summary>Funciona fora do Brasil?</summary><p>O clima, o vento, o Kp e os satélites funcionam em qualquer lugar, e as regras seguem o país do local. O mapa de zonas, os avisos do INMET, o SARPAS e a central do piloto são do Brasil. A partir da versão 1.2, nos Estados Unidos, o veredito e o mapa também usam o espaço aéreo da FAA (grade LAANC, classes, TFR e áreas especiais), os avisos do NWS e o METAR do aeroporto mais próximo.</p></details>
       <details><summary>Como cancelo a assinatura?</summary><p>No iPhone, em Ajustes ▸ seu nome ▸ Assinaturas ▸ Drone Briefing. Cancelando até 24 horas antes do fim do período, ela não se renova.</p></details>
     </div>
   </div>
@@ -292,7 +307,7 @@
   <div class="largura">
     <div>
       <p>© 2026 Leonardo Nogueira. Drone Briefing para iPhone, iPad e Apple Watch.</p>
-      <p class="legal">Ferramenta de planejamento: não substitui a autorização no SARPAS nem a avaliação do piloto. Dados do clima: Apple Weather. Espaço aéreo: DECEA (GeoAISWEB). Kp: NOAA SWPC. Avisos: INMET. Telas com dados de exemplo. Apple, iPhone, iPad e Apple Watch são marcas da Apple Inc.</p>
+      <p class="legal">Ferramenta de planejamento: não substitui a autorização no SARPAS nem a avaliação do piloto. Dados do clima: Apple Weather. Espaço aéreo: DECEA (GeoAISWEB). Kp: NOAA SWPC. Avisos: INMET. Espaço aéreo dos EUA (na 1.2): FAA. Avisos e METAR dos EUA: NWS e aviationweather.gov. Telas com dados de exemplo. Apple, iPhone, iPad e Apple Watch são marcas da Apple Inc.</p>
     </div>
     <nav aria-label="Rodapé">
       <a href="support.html">Suporte</a>

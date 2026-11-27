@@ -22,7 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../style.css?v=2026-11-25c">
+<link rel="stylesheet" href="../style.css?v=2026-11-27">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -62,7 +62,7 @@
 <section class="hero-v2">
   <div class="largura">
     <div>
-      <span class="etiqueta">New · Brazil's 2026 rules and airspace zones</span>
+      <span class="etiqueta">Coming in 1.2 · FAA airspace, TFRs and LAANC in the US</span>
       <h1>Know if you can fly <em>before</em> the drone leaves the bag.</h1>
       <p class="subtitulo">Drone Briefing brings the wind at your flight height, rain, the Kp index, satellites and the local rules together in one verdict, for the drone you are taking. In Brazil, with DECEA's airport and heliport zones too.</p>
       <div class="acoes">
@@ -87,7 +87,7 @@
 
 <section class="provas" aria-label="Sources and numbers">
   <div class="largura">
-    <p class="fontes">Data from <b>Apple Weather</b> · <b>DECEA</b> · <b>INMET</b> · <b>NOAA</b> · <b>IGS</b> (satellites)</p>
+    <p class="fontes">Data from <b>Apple Weather</b> · <b>DECEA</b> · <b>INMET</b> · <b>NOAA</b> · <b>IGS</b> (satellites) · <b>FAA</b> and <b>NWS</b> in the US, from 1.2</p>
     <ul class="numeros">
       <li><strong>6,136</strong><span>Brazilian aerodromes and heliports</span></li>
       <li><strong>33 to 400 ft</strong><span>wind at your flight height</span></li>
@@ -156,6 +156,20 @@
     </article>
 
     <article class="recurso invertido">
+      <div class="midia"><div class="aparelho"><img src="../assets/screens/us-map-en.jpg" alt="Map with the FAA LAANC grid in Santa Monica: class D, LAANC up to 50 ft" width="450" height="978" loading="lazy"></div></div>
+      <div>
+        <p class="sobre">US airspace <span class="selo-breve">Coming in 1.2</span></p>
+        <h3>The FAA's airspace in the verdict, hour by hour.</h3>
+        <p>In the United States, the LAANC grid with the most you can be authorized for, class B, C, D and E from the surface, TFRs with their times, prohibited and national security areas, and stadiums. Plus NWS warnings and the nearest airport's METAR against the Part 107 minimums.</p>
+        <ul class="lista-ok">
+          <li>Part 107 or recreational (44809) flight</li>
+          <li>Ask for LAANC from the app: the FAA's approved providers or FAADroneZone</li>
+          <li>Only a rounded area goes to the FAA, never your exact location</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="recurso">
       <div class="midia"><div class="aparelho"><img src="../assets/screens/week-en.jpg?v=2" alt="The week with the best window of each day" width="450" height="978" loading="lazy"></div></div>
       <div>
         <p class="sobre">Planning</p>
@@ -169,7 +183,7 @@
       </div>
     </article>
 
-    <article class="recurso">
+    <article class="recurso invertido">
       <div class="midia"><div class="aparelho"><img src="../assets/screens/pilot-en.jpg?v=2" alt="Pilot wallet with photo and documents" width="450" height="978" loading="lazy"></div></div>
       <div>
         <p class="sobre">Pilot wallet <span class="selo-pro">PRO</span></p>
@@ -221,6 +235,7 @@
           <li>Verdict with wind at height, rain and Kp</li>
           <li>Local rules and Brazil's zone map</li>
           <li>Brazilian weather warnings</li>
+          <li>US: FAA airspace and NWS warnings (from 1.2)</li>
           <li>3-day forecast and 1 saved place</li>
           <li>Small widget and Siri</li>
         </ul>
@@ -263,8 +278,8 @@
     <div class="perguntas">
       <details><summary>Does the verdict replace LAANC or SARPAS?</summary><p>No. Drone Briefing is a planning tool. Flights that need authorization still need it from the aviation authority; the app links to it.</p></details>
       <details><summary>How does the app know the wind at 400 ft?</summary><p>The Apple Weather forecast is given at 33 ft (10 m). The app projects it to your flight height with a profile that changes by day and night, and tells you values above 33 ft are estimated.</p></details>
-      <details><summary>Where do the airspace zones come from?</summary><p>In Brazil, from DECEA's public GeoAISWEB service: aerodromes, runways, heliports, restricted areas and helicopter corridors, with the distances of ICA 100-40/2026. Outside Brazil the app shows the general rules of the country and links to its official tools.</p></details>
-      <details><summary>Do I need an account? What about my location?</summary><p>No account, no ads, no tracking. Only the place's coordinate, rounded to about 1 km, goes to Apple Weather for the forecast. Zones are worked out on the iPhone, and your documents stay on it.</p></details>
+      <details><summary>Where do the airspace zones come from?</summary><p>In Brazil, from DECEA's public GeoAISWEB service: aerodromes, runways, heliports, restricted areas and helicopter corridors, with the distances of ICA 100-40/2026. From version 1.2, in the US, from the FAA's UAS Data Exchange (LAANC grid, airspace classes and special use areas) and the FAA's TFR list. Elsewhere the app shows the general rules of the country and links to its official tools.</p></details>
+      <details><summary>Do I need an account? What about my location?</summary><p>No account, no ads, no tracking. Only the place's coordinate, rounded to about 1 km, goes to Apple Weather for the forecast. In the US (from 1.2) it also goes to the FAA, the NWS and aviationweather.gov, which are public services. Zones are worked out on the iPhone, and your documents stay on it.</p></details>
       <details><summary>Does it work offline?</summary><p>The zone map, the rules and the pilot wallet work offline. The forecast needs the internet to update; widgets show the last one downloaded.</p></details>
       <details><summary>How do I cancel?</summary><p>On iPhone, in Settings ▸ your name ▸ Subscriptions ▸ Drone Briefing. Cancel at least 24 hours before the end of the period and it won't renew.</p></details>
     </div>
@@ -290,7 +305,7 @@
   <div class="largura">
     <div>
       <p>© 2026 Leonardo Nogueira. Drone Briefing for iPhone, iPad and Apple Watch.</p>
-      <p class="legal">A planning tool: it does not replace flight authorization or the pilot's judgment. Weather: Apple Weather. Brazilian airspace: DECEA (GeoAISWEB). Kp: NOAA SWPC. Brazilian warnings: INMET. Screens show sample data. Apple, iPhone, iPad and Apple Watch are trademarks of Apple Inc.</p>
+      <p class="legal">A planning tool: it does not replace flight authorization or the pilot's judgment. Weather: Apple Weather. Brazilian airspace: DECEA (GeoAISWEB). Kp: NOAA SWPC. Brazilian warnings: INMET. US airspace (from 1.2): FAA. US warnings and METAR: NWS and aviationweather.gov. Screens show sample data. Apple, iPhone, iPad and Apple Watch are trademarks of Apple Inc.</p>
     </div>
     <nav aria-label="Footer">
       <a href="support.html">Support</a>
