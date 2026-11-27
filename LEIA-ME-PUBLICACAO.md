@@ -66,6 +66,13 @@ Espere o DNS propagar (minutos a algumas horas) e marque **Enforce HTTPS** em Se
 
 ## Manutenção
 
+- **O site publicado está no repositório público `LeoCNogueira/dronebriefing-site`**; esta pasta é a cópia de
+  trabalho. Mude aqui e copie para lá (ou o contrário), para as duas não se separarem.
+- **Recursos anunciados antes de sair:** os recursos dos EUA da 1.2 (M10) estão no site desde 27/11/2026 com o
+  selo `selo-breve` ("Coming in 1.2" / "Na versão 1.2") e as marcas "from 1.2" / "na 1.2" no texto. **No dia em
+  que a Apple aprovar a 1.2, tire os selos e essas marcas** em `index.html`, `en/index.html`, `support.html`,
+  `en/support.html` e no cartão do Drone Briefing do site dos apps Raven (`LeoCNogueira/raven-apps`).
+
 - As telas em `assets/screens/` saem do simulador no modo de demonstração (piloto e semana fictícios), em JPEG de
   900 px. Para refazer: capturas com `-demo YES -pro lifetime` e `sips -s format jpeg -s formatOptions 78 -Z 900`.
 
